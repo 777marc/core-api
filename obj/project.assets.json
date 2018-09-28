@@ -11506,11 +11506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mamendoza\\source\\sandbox\\core-api\\core-api.csproj",
+      "projectUniqueName": "c:\\Users\\mamendoza\\source\\sandbox\\core-api\\core-api.csproj",
       "projectName": "core-api",
-      "projectPath": "C:\\Users\\mamendoza\\source\\sandbox\\core-api\\core-api.csproj",
+      "projectPath": "c:\\Users\\mamendoza\\source\\sandbox\\core-api\\core-api.csproj",
       "packagesPath": "C:\\Users\\mamendoza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mamendoza\\source\\sandbox\\core-api\\obj\\",
+      "outputPath": "c:\\Users\\mamendoza\\source\\sandbox\\core-api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
