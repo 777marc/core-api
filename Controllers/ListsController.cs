@@ -14,15 +14,15 @@ namespace core_api.Controllers
     {
         ListManager _lm = new ListManager();
 
-        [HttpGet]
-        public ActionResult<string> Get()
+        [HttpGet("{pageIndex}/{pageSize}")]
+        public ActionResult<string> Get(int pageIndex, int pageSize)
         {
-            var allItems = _lm.GetAllItems(1,5);
+            var allItems = _lm.GetAllItems(pageIndex,pageSize);
             var exp = JsonConvert.SerializeObject(allItems.ToArray());
             return Ok(exp);
         }
 
-        [HttpGet("{description}")]
+        [HttpGet("{description}/{pageIndex}/{pageSize}")]
         public ActionResult<string> Get(string description)
         {
             var itemsByDescription = _lm.FindItemsByDescription(description,1,5);

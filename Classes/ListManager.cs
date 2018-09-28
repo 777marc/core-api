@@ -8,14 +8,14 @@ namespace core_api.Classes
     {
         DataContext _dc = new DataContext();
 
-        public IQueryable<Item> GetAllItems(int pageIndex, int pageSize)
+        public IQueryable<Item> GetAllItems(int pageIndex = 1, int pageSize = 5)
         {
             var res = (from item in _dc.Items
                        select item).Skip((pageIndex - 1) * pageSize).Take(pageSize);
 
             return res.AsQueryable();
         }
-        public IQueryable<Item> FindItemsByDescription(string description, int pageIndex, int pageSize)
+        public IQueryable<Item> FindItemsByDescription(string description, int pageIndex = 1, int pageSize = 5)
         {
             var res = (from item in _dc.Items
                       where item.Description.Contains(description)
