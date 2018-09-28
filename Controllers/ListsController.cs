@@ -17,21 +17,16 @@ namespace core_api.Controllers
         [HttpGet]
         public ActionResult<string> Get()
         {
-            
-            var x = _lm.GetAllItems(1,5);
-            var name = x.Where(i => i.Id == 1).FirstOrDefault();
-            var exp = JsonConvert.SerializeObject(x.ToArray());
-
+            var allItems = _lm.GetAllItems(1,5);
+            var exp = JsonConvert.SerializeObject(allItems.ToArray());
             return Ok(exp);
         }
 
         [HttpGet("{description}")]
         public ActionResult<string> Get(string description)
         {
-            var x = _lm.FindItemsByDescription(description,1,5);
-            var name = x.Where(i => i.Id == 1).FirstOrDefault();
-            var exp = JsonConvert.SerializeObject(x.ToArray());
-
+            var itemsByDescription = _lm.FindItemsByDescription(description,1,5);
+            var exp = JsonConvert.SerializeObject(itemsByDescription.ToArray());
             return Ok(exp);
         }
 
