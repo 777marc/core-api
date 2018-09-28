@@ -11496,7 +11496,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "Newtonsoft.Json >= 11.0.2"
     ]
   },
   "packageFolders": {
@@ -11506,11 +11507,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\mamendoza\\source\\sandbox\\core-api\\core-api.csproj",
+      "projectUniqueName": "c:\\Users\\mamendoza\\source\\sandbox\\core-api-project\\core-api\\core-api.csproj",
       "projectName": "core-api",
-      "projectPath": "c:\\Users\\mamendoza\\source\\sandbox\\core-api\\core-api.csproj",
+      "projectPath": "c:\\Users\\mamendoza\\source\\sandbox\\core-api-project\\core-api\\core-api.csproj",
       "packagesPath": "C:\\Users\\mamendoza\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\mamendoza\\source\\sandbox\\core-api\\obj\\",
+      "outputPath": "c:\\Users\\mamendoza\\source\\sandbox\\core-api-project\\core-api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -11550,6 +11551,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[11.0.2, )"
           }
         },
         "imports": [
